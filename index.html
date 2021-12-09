@@ -1,18 +1,133 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/sticky-footer.css">
+    <link rel="stylesheet" href="css/textoption.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <style>
 
-    <button type="button" class="btn btn-secondary">Secondary</button>
+    </style>
+</head>
+
+<body>
+    <!--　ヘッダー　-->
+    <nav class="navbar navbar-light bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="#" alt="" width="30" height="24" class="d-inline-block align-top">
+                そうていたんさく
+            </a>
+        </div>
+    </nav>
+
+
+    <!--　メイン　-->
+    <div class="container-fluid">
+        <!--　タイトル　-->
+        <div class="card my-5 border-0">
+            <!--　キャッチコピー　-->
+            <div class="card-body d-flex justify-content-center align-items-center">
+                <p class="fs-1" style="color: #0db8d9;">
+                    "やりたい"<br>
+                    装丁から印刷所を<br>
+                    さがそう！</p>
+                <img src="..." class="rounded float-end" alt="...">
+            </div>
+            <!--　対応印刷所　アコーディオン　-->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            対応印刷所
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <a href="#">あかつき印刷</a>
+                            <a href="#">株式会社栄光</a>
+                            <a href="#">オレンジ工房</a>
+                            <a href="#">くりえい社</a>
+                            <a href="#">コミックモール</a>
+                            <a href="#">サングループ</a>
+                            <a href="#">SAN24</a>
+                            <a href="#">サンライズ</a>
+                            <a href="#">しまや出版</a>
+                            <a href="#">STAR BOOKS</a>
+                            <a href="#">大陽出版</a>
+                            <a href="#">トム出版 </a>
+                            <a href="#">西村謄写堂</a>
+                            <a href="#">日光企画</a>
+                            <a href="#">ねこのしっぽ</a>
+                            <a href="#">フリーク</a>
+                            <a href="#">PrintWalk</a>
+                            <a href="#">プリントオン</a>
+                            <a href="#">BRO'S</a>
+                            <a href="#">ホープ21</a>
+                            <a href="#">ポプルス</a>
+                            <a href="#">丸正インキ</a>
+                            <a href="#">みかんの樹</a>
+                            <a href="#">One Books</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <p class="fs-2 blink" style="color: #4dd0e1;">↓ <span class="markerDeepYellow">さがしてみる</span> ↓</p>
+        </div>
+
+        <!-- 表紙・本文　-->
+        <div class="card" style="border-color: #0db8d9; border-width: 6px;">
+            <div class="card-body">
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                    </label>
+                </div>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-info" style="background-color: #0db8d9;"" color=" #ffe600;">検索</button>
+
+
+    </div>
+
+    <!--　フッター　-->
+    <footer class="footer mt-auto py-3 bg-warning">
+        <div class="container">
+            <span class="text-muted">フッターのコンテンツをここに置きます。</span>
+        </div>
+    </footer>
+
 
     <script src="js/bootstrap.js">
-        
+
     </script>
 </body>
+
 </html>
