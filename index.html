@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/sticky-footer.css">
     <link rel="stylesheet" href="css/textoption.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/colorOption.css">
+    <link rel="stylesheet" href="css/viewOption.css">
     <style>
 
     </style>
@@ -17,35 +19,34 @@
 
 <body>
     <!--　ヘッダー　-->
-    <nav class="navbar navbar-light bg-warning">
+    <nav class="navbar navbar-light gradation-yp">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="#" alt="" width="30" height="24" class="d-inline-block align-top">
-                そうていたんさく
+                <img src="img/title-w.png" alt="" width="346" height="50" class="d-inline-block align-top">
             </a>
         </div>
     </nav>
 
 
     <!--　メイン　-->
-    <div class="container-fluid">
+    <div class="container-fluid maxwidth">
         <!--　タイトル　-->
-        <div class="card my-5 border-0">
+        <div class="card w-75 my-5 mx-auto  border-0">
             <!--　キャッチコピー　-->
             <div class="card-body d-flex justify-content-center align-items-center">
-                <p class="fs-1" style="color: #0db8d9;">
+                <p class="fs-1" style="color: #35a7ff;">
                     "やりたい"<br>
                     装丁から印刷所を<br>
                     さがそう！</p>
-                <img src="..." class="rounded float-end" alt="...">
+                <img src="img/main.png" alt="" width="200" height="200" class="rounded float-end" alt="...">
             </div>
             <!--　対応印刷所　アコーディオン　-->
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion accordion-flush mx-auto " id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            対応印刷所
+                            <span class="text-decoration-underline">対応印刷所</span>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
@@ -81,46 +82,60 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center">
-            <p class="fs-2 blink" style="color: #4dd0e1;">↓ <span class="markerDeepYellow">さがしてみる</span> ↓</p>
+        <div class="d-flex justify-content-center my-5">
+            <p class="fs-2 blink" style="color: #ff5964;">↓ <span class="markerDeepYellow">さがしてみる</span> ↓</p>
         </div>
 
         <!-- 表紙・本文　-->
-        <div class="card" style="border-color: #0db8d9; border-width: 6px;">
+        <div class="card w-75 mx-auto my-5 " style="border-color: #35a7ff; border-width: 6px;">
             <div class="card-body">
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Default checkbox
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Checked checkbox
-                    </label>
-                </div>
+                <!--　表紙ヘッダー　-->
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid mb-2" style="background-color: #ffe74c;">
+                        <span class="navbar-brand mb-0 h1">表紙</span>
+                    </div>
+                </nav>
+                <!--　表紙セレクタ　-->
+                <div class="my-2">
+                    <div class="btn-group my-2" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-dark" for="btncheck1">標準コート紙</label>
+                    
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-dark" for="btncheck2">特殊紙</label>
 
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-dark" for="btncheck3">カバー付き</label>
 
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-dark" for="btncheck4">変形断裁</label>
+                    </div>
+
+                    <select class="form-select my-2" aria-label="Default select example">
+                        <option selected>PP加工</option>
+                        <option value="1">クリア</option>
+                        <option value="2">マット</option>
+                        <option value="3">ホログラム</option>
+                        <option value="4">ベルベット</option>
+                        <option value="5">その他(特殊模様)</option>
+                    </select>
+                </div>
             </div>
         </div>
 
-        <button type="button" class="btn btn-info" style="background-color: #0db8d9;"" color=" #ffe600;">検索</button>
-
+        <div class="d-grid gap-2 col-6 mx-auto my-5 ">
+            <button type="button" class="btn" style="background-color: #ff5964; color:#fff;">検索</button>
+        </div>
 
     </div>
 
     <!--　フッター　-->
-    <footer class="footer mt-auto py-3 bg-warning">
-        <div class="container">
-            <span class="text-muted">フッターのコンテンツをここに置きます。</span>
+    <footer class="footer mt-auto py-3 gradation-yp">
+        <div class="container-fruid">
+            <a class="navbar-brand" href="#">
+                <img src="img/title-w.png" alt="" width="173" height="25" class="d-block rounded float-end">　
+            </a>
         </div>
     </footer>
 
