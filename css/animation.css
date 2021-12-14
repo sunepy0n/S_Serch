@@ -29,3 +29,22 @@
     transform: translateY(0);
   }
 }
+
+/*resultページ*/
+
+p.typingText{
+  letter-spacing: .1em;
+  color: #35a7ff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid rgba(255,255,255,.5);
+  animation: typing 1.5s steps(10),
+    blink .5s steps(1) infinite alternate;
+}
+
+@keyframes typing{
+  0% {width: 0;}
+}
+@keyframes blink{
+  50% {border-right-color: transparent;}
+}
