@@ -11,3 +11,21 @@
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
+
+.fadeup-box.fadeup.is-animated {
+  animation: fadeup 1.5s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+ 
+@keyframes fadeup {
+  0% {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
